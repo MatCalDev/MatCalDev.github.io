@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css" asp-append-version="true" />
+
+    <link rel="icon" type="image/x-icon" href="ImagenWebFavIcon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    @{
+        ViewData["Title"] = "Home Page";
+    }
+    
+    <header>
+        <a href="#inicio" class="logo">MatCalDev</a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#sobremi">About Me</a></li>
+                <li><a href="#trabajos">Works</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main"></div>
+    
+    <div class="idiomas">
+        <span class="es">Español</span>
+        <input type="checkbox" class="check" checked>
+        <span class="en">English</span>
+    </div>
+    
+    <!-- Inicio -->
+    <section id="inicio" class="section">
+        <div class="container">
+            <div class="logo">
+                <img src="ImagenWebFavIcon.png" alt="Logo" />
+            </div>
+            <h1 class="title">MATCALDEV</h1>
+            <p class="subtitle">WHERE DEEP SPACE MEETS DEEP LEARNING</p>
+        </div>
+    </section>
+    
+    <!-- Sobre Mí -->
+    <section id="sobremi" class="section">
+        <div class="container">
+            <h2>Matías Calvo Echeverría</h2>
+            <p class="subtitle">Software Developer</p>
+            <p>
+                I am a software developer passionate about artificial intelligence and astrophysics,
+                fields that inspire my work and my constant pursuit of knowledge. With experience in web application
+                development, databases, and advanced algorithms, my goal is to create innovative and efficient
+                technological solutions that integrate science and technology to solve complex problems. My main focus
+                lies in using machine learning and data analysis in interdisciplinary projects that not only drive
+                technological advancements but also contribute to understanding the universe and advancing the scientific community.
+            </p>
+            <p class="subtitle">Resume: <a href="Curriculum Vitae (Español) - Matías Calvo.pdf">Spanish  </a><a href="Curriculum Vitae (Inglés) - Matías Calvo.pdf">  English</a></p>
+            <p class="subtitle">Prices: <a href="Cotización Web (Español) - Matías Calvo.pdf">Spanish  </a><a href="Cotización Web (Inglés) - Matías Calvo.pdf">  English</a></p>
+        </div>
+    </section>
+    
+    <!-- Trabajos -->
+    <section id="trabajos" class="section">
+        <div class="Acontainer">
+            <h2>Works</h2>
+            <p class="subtitle">University Projects</p>
+            <p>
+                I am a software developer with experience in designing and building web applications tailored to specific needs.
+                I have worked on projects such as creating an e-commerce system for agricultural products, integrating user
+                and role management functions, and a gym management application that includes reservations, online payments,
+                and CRUD functionalities. My approach combines front-end and back-end development skills to deliver complete solutions.
+            </p>
+            <div class="slider-box">
+                <ul>
+                    <li><img src="Proyecto2Muestra.png" alt="Alternate Text" /></li>
+                    <li><img src="Proyect1Muestra.png" alt="Alternate Text" /></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="form-register">
+        <form action="https://formsubmit.co/matiascalvoecheverria@gmail.com" method="POST">
+            <h4>Contact</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Name">
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Phone">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Email">
+            <input class="controls" name="message" id="message" placeholder="Message">
+            <input class="botons" type="submit" value="Send">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </section>
+    
+
+    <a href="https://wa.me/50683272531" id="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+    <a href="#" id="scrolltop"><i class='bx bxs-up-arrow-circle'></i></a>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <a href="https://github.com/MatCalDev" id="github"><i class='bx bxl-github'>GITHUB</i></a>
+            <a href="https://www.linkedin.com/in/mat%C3%ADas-calvo-echeverr%C3%ADa-63747132b/" id="linkedin"><i class='bx bxl-linkedin-square'>LINKEDIN</i></a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js" asp-append-version="true"></script>
+</body>
+</html>
